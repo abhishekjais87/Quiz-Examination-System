@@ -68,19 +68,18 @@ CREATE TABLE attempts (
  total INT,
  date_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+```
 
-INSERT INTO users VALUES (1,'student','12345','Demo Student');
+## INSERT INTO users VALUES (1,'student','12345','Demo Student');
 🛠 Requirements
-Software	Version
-JDK	8 / 11 / 17
-Apache Tomcat	9
-MySQL	5.7 / 8+
-MySQL Connector/J	Latest
+- Software	Version
+- JDK	8 / 11 / 17
+- Apache Tomcat	9
+- MySQL	5.7 / 8+
+- MySQL Connector/J	Latest
 
-▶ How to Run the Project
+## ▶ How to Run the Project
 Copy project folder to:
-
-makefile
 C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps\
 Add mysql-connector-j.jar to:
 
@@ -88,17 +87,17 @@ WEB-INF/lib
 Compile Java files:
 
 nginx
-javac -cp "C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\servlet-api.jar;." -d "../WEB-INF/classes" com\quiz\model\*.java com\quiz\dao\*.java com\quiz\servlet\*.java com\quiz\util\*.java
+- javac -cp "C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\servlet-api.jar;." -d "../WEB-INF/classes" com\quiz\model\*.java com\quiz\dao\*.java com\quiz\servlet\*.java com\quiz\util\*.java
 Start Tomcat:
 startup.bat
 
-Open Browser:
+## Open Browser:
 http://localhost:8081/QuizExaminationSystem/login.jsp
 🔐 Default Login
 Username	Password
 student	12345
 
-🌱 Future Enhancements
+## 🌱 Future Enhancements
 
 Admin panel to add quiz questions
 Timer auto-submit
