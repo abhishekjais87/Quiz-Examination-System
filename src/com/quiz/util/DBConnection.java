@@ -8,7 +8,7 @@ public class DBConnection {
 
     private static final String URL  = "jdbc:mysql://localhost:3306/quizdb";
     private static final String USER = "root";   // 👈 apna MySQL user
-    private static final String PASS = "HeartsAgive@2005";   // 👈 apna MySQL password
+    private static final String PASS = "Bash@2005";   // 👈 apna MySQL password
 
     static {
         try {
@@ -22,3 +22,4 @@ public class DBConnection {
         return DriverManager.getConnection(URL, USER, PASS);
     }
 }
+
